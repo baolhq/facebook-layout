@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Facebook Login</string>
+
+    <string-array name="language_array">
+        <item>English</item>
+        <item>Tiếng Việt</item>
+        <item>Español</item>
+        <item>日本</item>
+        <item>Français</item>
+    </string-array>
+</resources>
