@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:adjustViewBounds="true"
-            android:contentDescription="Facebook logo image"
+            android:contentDescription="@string/facebook_logo_image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -25,13 +25,14 @@
 
         <Spinner
             android:id="@+id/select_language"
-            android:layout_width="120dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:layout_marginTop="12dp"
-            android:entries="@array/language_array"
+            android:backgroundTint="@color/gray_variant"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/facebook_logo_image" />
+            app:layout_constraintTop_toBottomOf="@+id/facebook_logo_image"
+            tools:entries="@array/language_array" />
 
         <TextView
             android:id="@+id/change_language"
@@ -52,6 +53,7 @@
             android:inputType="text"
             android:textColor="@color/white"
             android:textSize="20sp"
+            android:theme="@style/CustomEditText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/select_language" />
@@ -64,6 +66,7 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:textSize="20sp"
+            android:theme="@style/CustomEditText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email_or_phone_input" />
@@ -77,6 +80,7 @@
             android:text="LOG IN"
             android:textColor="@color/gray"
             android:textSize="18sp"
+            app:backgroundTint="@color/blue_variant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/password_input" />
@@ -87,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:text="Sign Up for Facebook"
-            android:textColor="@color/white"
+            android:textColor="@color/gray_variant"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:text="Forgot Password?"
-            android:textColor="@color/white"
+            android:textColor="@color/gray_variant"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
